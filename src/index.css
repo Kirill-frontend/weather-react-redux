@@ -1,13 +1,143 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+
+.app {
+  min-height: 100vh;  
+  background: linear-gradient(#babd10, #1adb20);
+  font-family: "Rowdies", "Arial";  
+  font-weight: 300;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-check:focus + .btn,
+.btn:focus {
+  font-weight: 700 !important;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.vertical-line {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 2px;
+  background-color: #000;
+  right: 53px;
+}
+
+.pd-3 {
+  padding: 30px 0 0 0;
+}
+
+.pd-4 {
+  padding: 40px 0 0 0;
+}
+
+.temp-value {
+  font-size: 28px;
+}
+
+.tac {
+  text-align: center;
+}
+
+.curr-temp-value {
+  font-size: 64px;
+}
+
+.aife {
+  align-items: flex-end;
+}
+
+.today_p {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 26px;
+}
+
+div.sunset_cont {
+position: relative;
+min-height: 250px;
+display: flex;
+justify-content: center;
+}
+
+div.sunset_box {
+  width: 492px;
+  height: 250px;
+  border-radius: 300px 300px 0 0;
+  border-top: 3px solid;
+  border-left: 3px solid;
+  border-right: 3px solid;
+}
+div.sunset_box_nested {
+  position: absolute;
+  top: 94%;
+  LEFT: 148px;  
+  min-width: 494px;  
+  transform: rotate(0deg);
+}
+ div.sunset_box_nested div.sunset_box_nested_dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #000;
+  transform: translateX(-10px);
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0) transparent rgb(0, 0, 0) transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+div.sun_info {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.sun_info div.sun_info_sunrise {
+
+}
+
+
+
+div.sun_info div.sun_info_sunser {
+
+}
+
+.right_side_container {
+  font-weight: 300;
+}
+
+.right_side_header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.right_side_middle {
+  display: flex;
+  justify-content: space-evenly;
 }
